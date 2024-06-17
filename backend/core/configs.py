@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     API_V1_STR: str = '/api/v1'
 
     DB_URL: str = 'postgresql+asyncpg://postgres:1212@localhost:5432/doc-manag'
-
+    #DB_URL: str = 'sqlite+aiosqlite:///./teste.db/'
     DBBaseModel: DeclarativeMeta = declarative_base()
 
     TEMPLATES: ClassVar[Jinja2Templates]  = Jinja2Templates(directory='templates')
